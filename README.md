@@ -2,6 +2,6 @@
 
 ## basic bot requirements
 - [x] closure command
-- [ ] tfr command
+- [x] tfr command
 - [ ] sh/ss info command
-- [ ] lp cam command (maybe nsf too?)
+- [x] lp cam command (maybe nsf too?)
