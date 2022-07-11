@@ -81,4 +81,4 @@ async def lcd(ctx):
 async def tcd(ctx):
     pass
 
-bot.run('OTUzMzY1NjIzOTUyNTA2OTQw.GYqZQ_.5pmEvwWec51Z7zm6oN79GtJEelNOcb1zkGReKM')
+bot.run('')
