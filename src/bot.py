@@ -31,7 +31,7 @@ async def tfr(ctx):
 @bot.command()
 async def cams(ctx):
     cams_embed=discord.Embed(title="All available LabPadre cameras.", description="example ;cam <name of camera>")
-    
+
     cams_embed.add_field(name="1", value="rover-2", inline=True)
     cams_embed.add_field(name="2", value="lab", inline=True)
     cams_embed.add_field(name="3", value="nerdle", inline=True)
@@ -43,6 +43,29 @@ async def cams(ctx):
     await ctx.send(embed=cams_embed)
 
 @bot.command()
+async def starship(ctx):
+    stats=discord.Embed(title="starship stats")
+
+    stats.add_field(name="HEIGHT", value="50 m / 164 ft", inline=True)
+    stats.add_field(name="DIAMETER", value="9 m / 30 ft", inline=True)
+    stats.add_field(name="PROPELLANT CAPACITY", value="1200 t / 2.6 Mlb", inline=True)
+    stats.add_field(name="THRUST", value="1500 tf / 3.2Mlbf", inline=True)
+    stats.add_field(name="PAYLOAD CAPACITY", value="100-150 t orbit dependent", inline=True)
+
+    await ctx.send(embed=stats)
+
+@bot.command()
+async def superheavy(ctx):
+    shstats=discord.Embed(title="superheavy stats")
+
+    shstats.add_field(name="HEIGHT", value="69 m / 230 ft", inline=True)
+    shstats.add_field(name="DIAMETER", value="9 m / 30 ft", inline=True)
+    shstats.add_field(name="PROPELLANT CAPACITY", value="3400 t / 6.8 Mlb", inline=True)
+    shstats.add_field(name="THRUST", value="7590 tf / 17 Mlbf", inline=True)
+
+    await ctx.send(embed=shstats)
+ 
+@bot.command()
 async def cam(ctx, cam):
     f = open('cams.json')
 
@@ -50,4 +73,12 @@ async def cam(ctx, cam):
     
     await ctx.send(data[f"{cam}"])
 
-bot.run('OTUzMzY1NjIzOTUyNTA2OTQw.YjDg7Q.SYVE5XftUt3tXrnaXRBHTtkq_Do')
+@bot.command
+async def lcd(ctx):
+    pass
+
+@bot.command
+async def tcd(ctx):
+    pass
+
+bot.run('OTUzMzY1NjIzOTUyNTA2OTQw.GYqZQ_.5pmEvwWec51Z7zm6oN79GtJEelNOcb1zkGReKM')
